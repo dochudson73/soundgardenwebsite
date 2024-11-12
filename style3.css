@@ -1,0 +1,170 @@
+/* 
+    Name: Robbie Walter
+    Date: 2024-11-03
+    Course: CS 125H Lab 5
+*/
+
+/* Plain element selector (font, line height, and background color) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4; /* Light background color */
+    margin: 0; /* Reset default body margin */
+    padding: 20px; /* Add padding around the page */
+}
+
+/* Style for side by side objects/images */     
+.left-image {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add space between the image and text */
+    max-width: 150px; /* Adjust the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.right-image {
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add space between the image and text */
+    max-width: 150px; /* Adjust the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Clearfix to clear float*/
+.clearfix {
+    clear: both; /* Clear left and right floats */
+    margin-top: 20px; /* Added some space above the cleared section */
+}
+
+/* Nested element selector (darkened text that's in between sections for easier reading) */
+section p {
+    color: #333; /* Darker text for paragraphs within sections */
+    margin: 10px 0; /* Add spacing between paragraphs */
+}
+
+/* Pseudo-class selector (change color when mouse is hovered over) */
+h1:hover {
+    color: darkorange; /* Change color when hovered over */
+}
+
+/* ID selector (center aligned the footer and added grey color) */
+#footer-text {
+    text-align: center; /* Center align the footer text */
+    color: #555; /* Grey color for footer text */
+}
+
+/* Class selector */
+.highlight {
+    background-color: yellow; /* Highlight background for certain text */
+    padding: 3px; /* Add padding around highlighted text */
+}
+
+/* Change font */
+h2 {
+    font-size: 24px;
+    font-weight: bold; /* Make h2 elements bold */
+    margin-bottom: 10px; /* Add space below h2 headings */
+}
+
+/* Change color */
+footer {
+    background-color: #ddd; /* Light gray background for footer */
+    padding: 10px; /* Padding for footer */
+    border-top: 1px solid #ccc; /* Top border for footer */
+    margin-top: 20px; /* Space between footer and content */
+}
+
+/* Change alignment */
+main {
+    text-align: left; /* Left align the main contents */
+    max-width: 800px; /* Specify width for main content area */
+    margin: 0 auto; /* Center the main content horizontally */
+    padding: 20px; /* Add padding inside the main area */
+    border: 1px solid #ccc; /* Border around main content */
+    background-color: #fff; /* White background for main content */
+}
+
+/* Box model concepts */
+
+/* Border and padding for section elements */
+section {
+    padding: 15px; /* Padding sections */
+    border: 1px solid #ddd; /* Light border for sections */
+    margin-bottom: 15px; /* Space below each section */
+    border-radius: 5px; /* Rounded corners for section border */
+}
+
+/* Header styling fixed header */
+header {
+    position: fixed; 
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add padding inside the header */
+    text-align: left; /* Align header left */
+    border-bottom: 4px solid darkorange; /* Add bottom border to header */
+    height: auto; /* Adjust header height to fit */
+    box-sizing: border-box; /* Include padding and border in height */
+}
+
+/* Styling for links section */
+ul, ol {
+    margin: 20px; /* Add margin around links section */
+    padding-left: 20px; /* Indentation for links section */
+}
+
+ul li, ol li {
+    margin: 10px 0; /* Space between each link*/
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #0073e6; /* Blue color for links */
+    font-weight: bold; /* Make the link text bold */
+}
+
+/* Style for the navigation bar */
+#navbar {
+    display: none; /* Hide the navbar initially */
+    position: absolute;
+    top: 80px; /* Position the navbar below the header */
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Dark background for navbar to match header */
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#navbar ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+#navbar ul li a:hover {
+    background-color: darkorange; /* hover on navigator bar sections */
+}
+
+/* Show navbar when header is hovered */
+header:hover #navbar {
+    display: block; /* Show the navbar on hover */
+}
+
+/* Main content styling */
+main {
+    text-align: left; /* Left align the main contents */
+    max-width: 800px; /* Specify width for main content area */
+    margin: 0 auto; /* Center the main content horizontally */
+    padding: 100px 20px 20px; /* Add top padding to avoid header overlap */
+    border: 1px solid #ccc; /* Border around main content */
+    background-color: #fff; /* White background for main content */
+}
